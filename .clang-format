@@ -1,0 +1,23 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+DerivePointerAlignment: false
+PointerAlignment: Middle
+SortIncludes: true
+ColumnLimit: 0
+#MaxEmptyLinesToKeep: 0
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+IncludeBlocks: Regroup
+BreakBeforeBraces: Linux
+AllowShortIfStatementsOnASingleLine: false
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterStruct: true
+  SplitEmptyFunction: true
+  AfterFunction: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeElse: false
+  IndentBraces: false

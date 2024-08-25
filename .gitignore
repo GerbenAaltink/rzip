@@ -1,0 +1,7 @@
+mybackup
+rzip_backup
+rzipc.coverage
+testdata
+*.rzip 
+rzippc.c
+.vscode
