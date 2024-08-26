@@ -1,4 +1,4 @@
-all: backup backup_restore precompressed build benchmark rzip coverage backup backup_restore
+all: precompressed build benchmark rzip coverage
 
 build:
 	gcc rzip.c -o rzip.o
@@ -26,15 +26,11 @@ benchmark:
 	rm benchmark.tar
 	rm benchmark.zip
 
-
-
 rzip: 
 	@rm -rf first.rzip  2>/dev/null
 	@rm -rf dir2  2>/dev/null
 	gcc rzip.c -o rzip.o
-	./rzip.o zip mybackup.rzip /usr/bin/ /home/retoor/Downloads/
-	./rzip.o unzip mybackup.rzip mybackup/
-
+	
 test:
 	gcc rzip.c -o rzip.o
 	./rzip.o test --debug
