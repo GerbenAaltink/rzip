@@ -45,7 +45,6 @@ backup:
 	cp *.c rzip_backup/
 	cp *.h rzip_backup/
 	cp *.md rzip_backup/
-	cp *.html rzip_backup/
 	cp Makefile rzip_backup/
 	cp .clang-format rzip_backup/
 

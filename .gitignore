@@ -5,3 +5,4 @@ testdata
 *.rzip 
 rzippc.c
 .vscode
+*.o*
