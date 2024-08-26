@@ -35,27 +35,6 @@ rzip:
 	./rzip.o zip mybackup.rzip /usr/bin/ /home/retoor/Downloads/
 	./rzip.o unzip mybackup.rzip mybackup/
 
-backup:  
-	@echo "Creating backup to rzip.rzip"
-	-@rm -rf rzip_backup
-	mkdir rzip_backup 
-	-@rm -rf testdata
-	-@rm -rf mybackup
-	-@cp -r ripc.coverage rzip_backup/
-	cp *.c rzip_backup/
-	cp *.h rzip_backup/
-	cp *.md rzip_backup/
-	cp Makefile rzip_backup/
-	cp .clang-format rzip_backup/
-
-	./rzip.o zip rzip.rzip rzip_backup --debug
-	-@rm -r rzip_backup	
-
-backup_restore:
-	@echo "Restoring backup"
-	mkdir rzip_backup
-	./rzip.o unzip rzip.rzip rzip_backup --silent --debug
-
 test:
 	gcc rzip.c -o rzip.o
 	./rzip.o test --debug

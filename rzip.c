@@ -901,7 +901,7 @@ void rzip_optimize_terminal()
 {
     // Adjustable with RZiP_TERMINAl_BUFFER_SiZE
     setvbuf(stdout, NULL, _IONBF, 0);
-    setvbuf(stdout, rzip_term_buff, _IOFBF, sizeof(rzip_term_buff));
+    //setvbuf(stdout, rzip_term_buff, _IOFBF, sizeof(rzip_term_buff));
 }
 int main(int argc, char * argv[])
 {
